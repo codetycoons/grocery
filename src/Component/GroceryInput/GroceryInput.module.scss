@@ -1,0 +1,39 @@
+.GroceryInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.GroceryInput input {
+  border: 1px solid lightblue;
+  outline: none;
+  padding: 10px 20px;
+  width: 60%;
+}
+
+.GroceryInput button {
+  outline: none;
+  border: none;
+  background-color: #001f49;
+  color: white;
+  padding: 11px 20px;
+  cursor: pointer;
+  width: 20%;
+  transition: all 0.2s linear;
+  &:hover {
+    // color: #073676 !important;
+    background-color: #073676 !important;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .GroceryInput {
+    flex-wrap: wrap;
+  }
+  .GroceryInput input,
+  .GroceryInput button {
+    width: 100%;
+  }
+}

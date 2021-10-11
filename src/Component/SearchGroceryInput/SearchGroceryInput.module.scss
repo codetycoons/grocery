@@ -1,0 +1,23 @@
+.SearchGroceryInput {
+  display: flex;
+  align-items: center;
+}
+
+.SearchGroceryInput img {
+  height: 30px;
+  margin: 0 10px 0 10px;
+}
+
+.SearchGroceryInput input {
+  border: none;
+  border-bottom: 1px solid blue;
+  outline: none;
+  width: 0px;
+  transition: width 0.2s linear;
+}
+
+.SearchGroceryInput input.width_full {
+  padding: 5px 10px;
+  width: 200px;
+  transition: all 0.2s linear;
+}

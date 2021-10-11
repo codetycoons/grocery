@@ -1,0 +1,10 @@
+.EditGroceryItem input {
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid #f3f2f1;
+  width: 100%;
+
+  &:focus {
+    border-bottom: 1px solid green;
+  }
+}

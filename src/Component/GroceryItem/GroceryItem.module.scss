@@ -1,0 +1,64 @@
+.GroceryItem {
+  // padding: 0.5rem;
+  background: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+
+  &:hover {
+    box-shadow: 0px 3px 3px #e3dede;
+  }
+}
+
+.GroceryItem button {
+  margin-right: 10px;
+  outline: none;
+  border: 1px solid #001f49;
+  background-color: #001f49;
+  color: white;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px 10px 5px 0;
+
+  &:hover {
+    background-color: white;
+    color: #001f49;
+    border: 1px solid #e8e8e8;
+  }
+}
+
+.GroceryItem .quantity {
+  color: white;
+  background-color: darkcyan;
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 5px 10px 5px 0;
+}
+
+.GroceryItem .name {
+  font-weight: bold;
+  width: 78%;
+  word-break: break-word;
+  padding: 1rem 0.5rem;
+}
+
+.GroceryItem .actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 435px) {
+  .GroceryItem .actions {
+    flex-direction: column;
+    text-align: center;
+    align-items: unset;
+  }
+}

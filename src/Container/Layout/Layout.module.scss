@@ -1,0 +1,12 @@
+.Layout {
+  background-color: #f3f2f1;
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .Layout {
+    width: 95%;
+  }
+}

@@ -1,0 +1,45 @@
+.GroceryList {
+  width: 80%;
+  margin: auto;
+}
+
+.GroceryList .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: underline;
+  color: darkblue;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.SearchGroceryInput {
+  display: flex;
+  align-items: center;
+}
+
+.GroceryList img {
+  height: 30px;
+  margin: 0 10px 0 10px;
+}
+
+.GroceryList input {
+  border: none;
+  border-bottom: 1px solid blue;
+  outline: none;
+  width: 0px;
+  transition: width 0.2s linear;
+}
+
+.GroceryList input.width_full {
+  padding: 5px 10px;
+  width: 200px;
+  transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 710px) {
+  .GroceryList {
+    width: 100%;
+  }
+}
