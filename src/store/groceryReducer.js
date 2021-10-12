@@ -22,6 +22,11 @@ function groceryReducer(state = [], action) {
         if (el.id === action.id) return { ...el, isPurchased: !el.isPurchased };
         return el;
       });
+    case actionTypes.EDIT_GROCERY:
+      return state.map((el) => {
+        if (el.id === action.id) return { ...el, value: action.value };
+        return el;
+      });
     default:
       return state;
   }

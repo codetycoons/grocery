@@ -52,7 +52,6 @@ function GroceryList() {
   const [searchList, setSearchList] = useState([]);
 
   const searchGrocery = (value) => {
-    console.log(value, groceryState);
     setSearchList(groceryState.filter((el) => el.value === value));
   };
 
